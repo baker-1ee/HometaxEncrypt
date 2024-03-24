@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  # 서비스 이름
+  encrypt:
+    # Dockerfile 위치
+    build: .
+    # image name:tag
+    image: hometax_encrypt:v1.0.1
+    # Host 포트 : Container 포트
+    ports:
+      - "50000:5001"
